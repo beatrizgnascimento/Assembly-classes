@@ -8,7 +8,7 @@ main:
 	li $v0, 5 #Ler o valor inteiro
 	syscall
 	
-	sle $t0, $v0, $zero #Se v0 < 0
+	slt $t0, $v0, $zero #Se v0 < 0
 	bne $t0, $zero, then1
 	
 	#Bloco else

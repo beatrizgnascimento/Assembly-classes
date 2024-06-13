@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(){
+
+	int n;
+	if ((n & 0x1) == 0x1)
+		printf("impar\n");
+	else
+		printf("par\n");
+	return 0;
+}

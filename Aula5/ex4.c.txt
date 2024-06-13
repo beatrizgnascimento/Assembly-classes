@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(){
+	int n = 8, ret;
+
+	ret = verifica(n)
+
+	if(ret == 0) printf("composto");
+	else printf("primo");
+
+	return 0;
+}
+
+int verifica(int n){
+
+	int i, cont;
+ 
+	for(i = 1; i <= n; i++){
+		if(n % i == 0) cont++;
+	}
+	
+	if(cont == 2) return 1;
+	else return 0;
+	
+}

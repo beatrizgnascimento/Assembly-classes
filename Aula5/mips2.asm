@@ -1,6 +1,6 @@
 
 .data
-sim:	.asciiz "sim
+sim:	.asciiz "sim"
 nao:	.asciiz "nao"
 .text
 .globl main

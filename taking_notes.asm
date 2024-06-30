@@ -22,3 +22,9 @@
 #	Para percorrer o array (endereço + posição)
 # addi $t1, $t1, 4  # incrementar o endereço do array para a próxima posição
 # addi $t0, $t0, 1 # incrementar contador para a próxima posição do array
+
+#--------------------Strings------------------------
+#Ao imprimir uma string em .data devemos colocar
+#la (load address) $a0, nome_string antes de imprimi-la com:
+#li $v0, 4
+#syscall

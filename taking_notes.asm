@@ -28,3 +28,5 @@
 #la (load address) $a0, nome_string antes de imprimi-la com:
 #li $v0, 4
 #syscall
+
+

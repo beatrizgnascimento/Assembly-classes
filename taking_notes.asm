@@ -30,3 +30,12 @@
 #syscall
 
 
+#--------------------Subprogramas------------------------
+#No main escrever jal (nome subprograma)
+#No fim do subprograma não esquecer de colocar:
+# jr $ra
+#Vale a pena também passar o resultado final para v0 e no main passar o v0 para a0
+#[Subprograma]
+# move $v0, $t0
+#[Main]
+# move $a0, $v0

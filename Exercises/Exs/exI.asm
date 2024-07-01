@@ -11,17 +11,24 @@ main:
 	
 	jal soma
 	
+	move $a0, $v0 #Passa v0 para a0
+	li $v0, 1
+	syscall
+	
+	li $v0, 10
+	syscall
+	
 .text
 soma:
-while:
 	li $t2, 0 #soma = 0
-	beq $t0, $t1, fim
+	move $t3, $t0
+while:
+	bgt $t3, $t1, fim
 	
-	add $t3, $t2, $t0 #soma = soma + i
-	addi $t0, $t0, 1
+	add $t2, $t2, $t3 #soma = soma + i
+	addi $t3, $t3, 1
 	j while
 	
 fim:
-	move $a0, $t3
-	li $v0, 1
-	syscall
+	move $v0, $t2 #Passa a soma para v0
+	jr $ra

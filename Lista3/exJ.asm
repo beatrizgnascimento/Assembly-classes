@@ -28,6 +28,7 @@ while1:
 	jr $ra
 
 
+
 maior_valor:
 	la $t1, v #carrega o endereço do array no registrador t1
 	li $t0, 0 #cont = 0

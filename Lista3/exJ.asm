@@ -6,7 +6,7 @@ main:
 	jal leitura
 	jal maior_valor
 	
-	move $a0, $v1 #imprimir o maior valor
+	move $a0, $v0 #imprimir o maior valor
 	li $v0, 1
 	syscall
 	
@@ -39,7 +39,7 @@ while2:
 	addi $t1, $t1, 4 # incrementar endereço do array para a próxima posição
 	addi $t0, $t0, 1 # incrementar contador
 	blt $t0, 6, while2 #loop percorre todo o array
-	move $v1, $t3 # retorna o maior valor
+	move $v0, $t3 # retorna o maior valor
 	jr $ra
 then1:
 	move $t3, $t2 # atualizar o valor de t3 (maior valor)

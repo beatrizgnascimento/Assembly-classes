@@ -16,7 +16,7 @@
 #li $t0, 0 #contador da posição do array 
 	
 #	Armazenar o valor em uma posição do array
-#sw $v0, 0($t1) #sw = armazenar o valor de um registrador em uma posição de memória 
+#sw $v0, 0($t1) #sw = armazenar o valor lido de um registrador em uma posição de memória 
 #armazenar o valor de v0 no array
 
 #	Para percorrer o array (endereço + posição)
